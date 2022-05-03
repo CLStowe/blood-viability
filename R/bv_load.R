@@ -99,7 +99,7 @@ bv_load_data <- function() {
       aliquotamnt,
       aliquotCode,
       aliquotDescription,
-      aliquotGUID,
+      -aliquotGUID, # variables with GUIDs are covered by other variables
       aliquotmsrmnt,
       allex_pcaa,
       anestallerg_pcaa,
@@ -107,10 +107,10 @@ bv_load_data <- function() {
       asExpected,
       asian_psca,
       assignmentcode,
-      assignmentdescription,
-      assignmentGUID,
-      barcodeID_pcaa,
-      barcodeID_pcab,
+      -assignmentdescription, #covered by assignmentcode variable
+      -assignmentGUID, # variables with GUIDs are covered by other variables
+      -barcodeID_pcaa, # this is a CRF identifier associated with a participant
+      -barcodeID_pcab, # this is a CRF identifier associated with a participant
       -bid, # identifier
       biotindays_pcaa,
       biotingr3_pcaa,
@@ -140,12 +140,12 @@ bv_load_data <- function() {
       -collForm_d_visit,
       -collForm_recordthread,
       -collForm_staffID,
-      colorCode,
-      colorDescription,
-      colorGUID,
+      -colorCode, # notrelevant, just informational 
+      -colorDescription, # notrelevant, just informational 
+      -colorGUID, # notrelevant, just informational 
       -comments,
-      d_fusample_pcaa,
-      d_fusample_pcab,
+      -d_fusample_pcaa, # doesn't have anything to do with the collection or processing of samples just follow-up of the participant for issues
+      -d_fusample_pcab, # doesn't have anything to do with the collection or processing of samples just follow-up of the participant for issues
       d_lastfluvac_pcaa,
       d_mencyc_pcaa,
       d_visit_pca, # this was derived above
@@ -177,8 +177,8 @@ bv_load_data <- function() {
       fushow_pcab,
       fusignsymp_pcaa,
       fusignsymp_pcab,
-      fustaffid_pcaa,
-      fustaffid_pcab,
+      -fustaffid_pcaa, #this has nothing to do with collection or processing of samples
+      -fustaffid_pcab, #this has nothing to do with collection or processing of samples
       fwMatch,
       haex_pcaa,
       health_pcaa,
@@ -195,7 +195,7 @@ bv_load_data <- function() {
       -Live_cell_concentration, # part of the outcome
       -low_rin, # part of the outcome
       -low_viability, # part of the outcome
-      manifestGUID,
+      -manifestGUID, # variables with GUIDs are covered by other variables
       meetprereq_pcaa,
       meetprereq_pcab,
       mencycdays_pcaa,
@@ -228,7 +228,7 @@ bv_load_data <- function() {
       raceoth_psca,
       randomGroupCode,
       randomGroupDescription,
-      randomGroupGUID,
+      -randomGroupGUID, # variables with GUIDs are covered by other variables
       -recid,
       reconcileStatus,
       -recordthread_pcaa,
@@ -237,27 +237,27 @@ bv_load_data <- function() {
       samemeal_pcab,
       sampleGroupCode,
       sampleGroupDescription,
-      sampleGroupGUID,
+      -sampleGroupGUID, # variables with GUIDs are covered by other variables
       sampleGroupOrder,
       sampleNumber,
       sampleprocessGroupCode,
       sampleprocessGroupDescription,
-      sampleprocessGroupGUID,
+      -sampleprocessGroupGUID, # variables with GUIDs are covered by other variables
       sampleprocessGroupOrder,
       sampletime,
       sampleTypeCode,
       sampleTypeDescription,
-      sampleTypeGUID,
+      -sampleTypeGUID, # variables with GUIDs are covered by other variables
       sampleTypeOrder,
       schedulecode,
       scheduleDescription,
-      scheduleGUID,
+      -scheduleGUID, # variables with GUIDs are covered by other variables
       sedconex_pcaa,
       sedex_pcaa,
       sex_psca,
-      siteGUID,
-      siteID,
-      siteName,
+      -siteGUID, # variables with GUIDs are covered by other variables
+      -siteID, # coded site ID covers this
+      -siteName, # coded site ID covers this
       skinirritat_pcaa,
       skinirritat_pcab,
       spintime,
@@ -283,16 +283,16 @@ bv_load_data <- function() {
       testWeight,
       timepoint,
       timepointDescription,
-      timepointGUID,
+      -timepointGUID, # variables with GUIDs are covered by other variables
       timepointOrder,
       timepointVersion,
-      uploadGUID,
+      -uploadGUID, # variables with GUIDs are covered by other variables
       verified,
       Viability,
       -vialLabel,
       visitCode,
-      visitDescription,
-      visitGUID,
+      -visitDescription, # duplicate of visitcode information
+      -visitGUID, # variables with GUIDs are covered by other variables
       visitstatus,
       wtkg_pcaa,
       wtkg_pcab
